@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family:"Roboto";
+                background-color:#e8431a;
+            }
+           .gallery{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:10px;
+           }
+           .card{
+            background-color:white;
+            color:black;
+            border-style: solid;
+            border-color:grey;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius:40px;
+            text-align: center;
+            width:300px;
+            padding-bottom: 16px;
+            margin-top:10px;
+            margin-left:20px;
+            transition,border-color: transform 0.3s ease,5px;
+           }
+           .card:hover{
+            transform:scale(1.15);
+            border-color: black;
+           }
+           h1{
+            text-align:center;
+           }
+           .card img {
+                width: 100%;           
+                height: auto;          
+                border-top-left-radius: 40px;
+                border-top-right-radius: 40px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+           }
+
+        </style>
+    </head>
+    <body>
+        <h1>Avengers Gallery</h1>
+        <div class="gallery">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjMz9qrvv3QFxLLuT1q5JlA3ZhVwMiKi77Fzd7LEeNwzcxU6_NaaDRbtETQcl9X-jPRP8&usqp=CAU"/>
+                <p>IRON MAN</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7w3Ur5jODi-BLxYc5vlhMI3ajkX5VFZTFHg&s"/>
+                <p>CAPTAIN AMERICA</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/25/57/90/2557903c5e151d1802303728bdb64b53.jpg"/>
+                <p>SPIDER MAN</p>
+            </div>
+            <div class="card">
+                <img src="https://c4.wallpaperflare.com/wallpaper/365/584/63/movie-doctor-strange-benedict-cumberbatch-marvel-comics-wallpaper-preview.jpg"/>
+                <p>DR.STRANGE</p>
+            </div>
+            <div class="card">
+                <img src="https://wallpapers.com/images/featured/hulk-6mm236yblh8z7yed.jpg"/>
+                <p>HULK</p>
+            </div>
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/91rZG2MlOHL._AC_UF1000,1000_QL80_.jpg"/>
+                <p>THOR</p>
+            </div>
+        </div>
+    </body>
+</html>
